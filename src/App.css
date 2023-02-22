@@ -1,0 +1,33 @@
+body {
+  background: #f8f8f8;
+  touch-action: none;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.controls {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  bottom: auto;
+  left: 24px;
+  z-index: 1;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+  .controls {
+    max-width: 300px;
+  }
+}
+
+input[type="range"] {
+  touch-action: none;
+}
